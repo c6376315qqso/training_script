@@ -3,7 +3,7 @@
 #block(name=occuseg_training_0, threads=10, memory=100000, subtasks=1, gpu=true, hours=200)
    source activate p1
    MODEL=leyao_220727_01
-   EPOCH=279
+   EPOCH=270
    hdfs dfs -get $HDFS_HOME/model/ScanNet/${MODEL: 0-9}/* ckpts/
 
    TASK_NAME=leyao_220731_01
